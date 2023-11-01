@@ -1,0 +1,9 @@
+Give me the parallel version implemented in CUDA including memory allocations and copies for GPU memory of the following code 
+void saxpy(int n, float a, float *x, float *y)
+{
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        y[i] = a * x[i] + y[i];
+    }
+}
